@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37111.16 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C#(Array,String,Loops)", "C#(Array,String,Loops).csproj", "{B11D8E86-4E23-4D93-9292-C2362464BFD7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B11D8E86-4E23-4D93-9292-C2362464BFD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B11D8E86-4E23-4D93-9292-C2362464BFD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B11D8E86-4E23-4D93-9292-C2362464BFD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B11D8E86-4E23-4D93-9292-C2362464BFD7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9041248E-D7DB-4520-9464-3250EE553FFB}
+	EndGlobalSection
+EndGlobal
