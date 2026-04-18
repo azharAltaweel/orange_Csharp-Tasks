@@ -494,7 +494,22 @@ namespace C_50_Tasks____Methods_List_LINQ_LinkedList_
             //}
 
             //✅ Task 9: Peaks Finder
+            //int[] arr = { 1, 3, 2, 4, 1 };
+            //List<int>peaks= new List<int>();
+            //for (int i = 1; i < arr.Length-1; i++)
+            //{
+            //    if (arr[i - 1] < arr[i] && arr[i + 1] < arr[i])
+            //        peaks.Add(arr[i]);
+            //}
+            //Console.Write("peaks= " );
 
+            //foreach (var peak in peaks)
+            //{
+            //    Console.Write(peak+" " );
+            //}
+
+
+            //✅ Task 10: Two Sum(Hard Version)
 
 
 
