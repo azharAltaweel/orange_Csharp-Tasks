@@ -25,10 +25,10 @@ namespace Function2
             {
                 for (int j = 0; j < str[i].Length; j++)
                 {
-                    if (char.IsDigit(str[i][j]))
+                    if (char.IsDigit(str[i][j]))//check if the character is number
                     {
                         result.Add(str[i]);
-                        break;
+                        break;//اول ما يلاقي الرقم بطلع من المكلمة وبروح بشييك عالكلمة اللي بعدها 
                     }
                 }
             }
@@ -37,20 +37,46 @@ namespace Function2
 
         //3) Given a string, reverse all the words which have odd length.The even length words are not changed.
         static string ReverseOddString(string str) {
-            if (str.Length % 2 != 0)
+            string[] words = str.Split(' ');
+            List<string> result = new List<string>();
+
+            for (int i = 0; i < words.Length; i++)
             {
-                for
+                if (words[i].Length % 2 != 0)
+                {
+                    result.Add(new string(words[i].Reverse().ToArray()));
+                }
+                else
+                {
+                    result.Add(words[i]); // keep even words
+
+                }
             }
+            return string.Join(" ", result);
         }
 
 
         //4) A pandigital number contains all digits(0-9) at least once.Write a function that takes an integer, returning true if the integer is pandigital, and false otherwise.
 
+         static bool pandigitalNumber(long num)
+        {
+            string strNum = num.ToString();
 
+            for(char i = '0'; i <='9'; i++)//i is the char which is the digit from 0-9
+            {
+                if (!strNum.Contains(i))
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
 
 
         static void Main(string[] args)
         {
+            Console.WriteLine(ReverseOddString("azhar altaweel"));
+            Console.WriteLine(pandigitalNumber(1203987654));//dont start with zero ما بقرؤو ازا كان بالاول 
         }
     }
 }
